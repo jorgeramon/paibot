@@ -3,8 +3,8 @@ const searchEngine = require('./search-engine');
 const whatsapp = require('./whatsapp');
 const model = require('./database');
 
-// Every 5 minutes
-cron.schedule('*/1 * * * *', async function () {
+// Every 3 minutes
+cron.schedule('*/3 * * * *', async function () {
   console.log('Searching...');
 
   const response = await searchEngine.search();
