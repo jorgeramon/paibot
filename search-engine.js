@@ -7,7 +7,7 @@ exports.search = async function () {
 }
 
 async function fetchUrl(area) {
-  const fullUrl = `https://webapi.segundamano.mx/nga/api/v1/public/klfst?area=${area}&category=1040&region=11&q=departamento&offset=1&lim=28&lang=es&suborder=-${SEARCH_ENGINE.MAX_PRICE}`;
+  const fullUrl = `https://webapi.segundamano.mx/nga/api/v1/public/klfst?area=${area}&category=1040&q=departamento&offset=1&lim=28&lang=es&suborder=-${SEARCH_ENGINE.MAX_PRICE}`;
 
   const response = await axios({
     method: 'get',
