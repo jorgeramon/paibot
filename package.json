@@ -17,6 +17,8 @@
     "js-yaml": "^3.13.1",
     "mongoose": "^5.8.3",
     "node-cron": "^2.0.3",
+    "nodemailer": "^6.4.2",
+    "pug": "^2.0.4",
     "twilio": "^3.39.1"
   }
 }

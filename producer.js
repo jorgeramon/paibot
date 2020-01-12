@@ -1,6 +1,5 @@
 const cron = require('./lib/cronjob');
 const searchEngine = require('./lib/search-engine');
-const whatsapp = require('./lib/whatsapp');
 const queue = require('./lib/queue');
 
 cron(async function () {
@@ -17,7 +16,7 @@ cron(async function () {
     } catch (e) {
       console.error('\n--------------------------------------------------------');
       console.error(`ERROR [${ ad.uid }]`);
-      console.error('Couldn\'t be added to the queue..');
+      console.error('Couldn\'t be added to the queue...');
       console.error(e.message);
     }
   }
